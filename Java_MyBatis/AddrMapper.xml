@@ -2,9 +2,11 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--xml 파일 경로 & 파일 이름 주의-->
 <mapper namespace="AddrMapper">
 
 	<!-- 해당 sql을 메서드와 연결해서 처리. id는 메서드명, resultType 리턴, parameterType 매개변수 -->
+	<!--	리턴값과 매개변수는 '형' 이기 때문에 값이 하나만 들어와야 하므로 Addr 이라는 객체(한덩어리)로 받아준다. -->
     <select id="getAddresses" resultType="Addr">
       SELECT *
       FROM t_address

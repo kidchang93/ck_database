@@ -7,15 +7,18 @@
     <environment id="development">
       <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
+        <!-- 다른 부분 건드릴 필요 없이 이 네부분만 정확하게 잘 적어주면 된다. -->
         <property name="driver" value="org.mariadb.jdbc.Driver"/>
         <property name="url" value="jdbc:mariadb://localhost:3306/addrapp"/>
         <property name="username" value="root"/>
         <property name="password" value="12345"/>
+        <!-- #######################################################. -->
       </dataSource>
     </environment>
   </environments>
    
   <mappers>
+    <!-- 폴더명/파일명 주의하여 잘 써야함.-->
     <mapper resource="AddrMapper.xml"/>
   </mappers>
    
