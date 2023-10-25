@@ -8,11 +8,13 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class DBUtil {
 
-	String url = "jdbc:mariadb://localhost:3306/addr_prj";
+	String url = "jdbc:mariadb://localhost:3306/addrapp";
 	String user = "root";
 	String pass = "12345";
-	SqlSessionFactory sqlSessionFactory;
-	
+	SqlSessionFactory sqlSessionFactory ;
+
+
+
 	public void init() {
 		try {
 			String resource = "mybatis-config.xml";

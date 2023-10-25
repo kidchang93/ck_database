@@ -7,7 +7,8 @@ public class AddrApp {
 		
 		DBUtil db = new DBUtil();
 		Scanner scan = new Scanner(System.in);
-		
+		db.init();
+
 		while(true) {
 			System.out.print("명령어를 입력해주세요 : ");
 			String cmd = scan.nextLine();
@@ -54,8 +55,10 @@ public class AddrApp {
 				
 			} else if(cmd.equals("delete")) {
 				System.out.print("몇번 주소록을 삭제하시겠습니까 : ");
+
 				int id = Integer.parseInt(scan.nextLine());
 				db.deleteAddress(id);
+
 				System.out.println(id + "번 주소록이 삭제되었습니다.");
 				System.out.println("==============================");
 			}
