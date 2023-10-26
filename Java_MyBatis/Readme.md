@@ -33,7 +33,7 @@ Java 와 Database 를 연결하여
 - MyBatis 를 사용하여 JDBC의 대부분의 기능을 수행시키며
 - MySQL로 데이터 베이스에 저장 및 관리 하는 RDBMS 이용
 
-## Ⅲ) UX / UI
+## Ⅲ) 콘솔 구현
 ## add 기능 구현
 ![add](https://github.com/kidchang93/ck_database/assets/145524731/56ba05f9-93eb-4e7f-98b4-cf01d84a2c89)
 
